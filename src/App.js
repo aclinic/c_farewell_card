@@ -9,7 +9,7 @@ import FarewellCards from './FarewellCards'
 const App = () => {
   const [messages, setMessages] = useState([])
   useEffect(() => {
-    fetch('http://localhost:3000/messages')
+    fetch('https://cory-farewell-card.herokuapp.com/messages')
       .then(resp => resp.json())
       .then(resp => {
         setMessages(resp)
