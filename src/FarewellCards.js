@@ -11,7 +11,7 @@ const FarewellCards = (props) => {
             <Col key={idx}>
                 <Card style={{ width: '18rem' }}>
                     <Card.Body>
-                        <Card.Title>{message.author}</Card.Title>
+                        <Card.Title><b>{message.author}</b></Card.Title>
                         <Card.Text>
                             {message.farewellMessage}
                         </Card.Text>
